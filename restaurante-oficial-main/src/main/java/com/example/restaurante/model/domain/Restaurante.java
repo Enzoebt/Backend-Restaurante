@@ -30,6 +30,10 @@ public class Restaurante {
     
     private String nomeRestaurante;
     private String cnpj;
+    private String endereco;
+    private String telefone;
+    private String email;
+    private String proprietarioRestaurante;
 
     @OneToMany(mappedBy = "restaurante")
     private Set<Cliente> clientes = new HashSet<>();
